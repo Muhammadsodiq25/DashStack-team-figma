@@ -1,117 +1,53 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
-import headerFlashsale from "./assets/header-flash-sale.png";
-import headerDeals from "./assets/header-deals.png";
-import headeruser from "./assets/header-user.png";
-import headerbuy from "./assets/header-buy.png";
-import Categories from "./components/categories/Categories";
+import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
-import Footer from "./components/footer/Footer";
-import AllCategories from "./pages/allCategories/AllCategories";
-import Zara from "./pages/zara/Zara";
-import Product from "./pages/product/Product";
-import Cart from "./pages/cart/Cart";
-
-const header_right_cont = [
-  {
-    img: headerDeals,
-    title: "My Deals",
-    col: "#FC7901",
-  },
-  {
-    img: headeruser,
-    title: "Sign Up/Sign In",
-    col: "#666666",
-  },
-  {
-    img: headerbuy,
-    title: "Cart",
-    col: "#666666",
-  },
-];
-
-const categories_cont = [
-  {
-    text: "All Categories",
-    to: "/all_categories",
-  },
-  {
-    text: "Premium Fruits",
-    to: "/all_categories",
-  },
-  {
-    text: "Home & Kitchen",
-    to: "/all_categories",
-  },
-  {
-    text: "Fashion",
-    to: "/all_categories",
-  },
-  {
-    text: "Electronics",
-    to: "/all_categories",
-  },
-  {
-    text: "Beauty",
-    to: "/all_categories",
-  },
-  {
-    text: "Home Improvement",
-    to: "/all_categories",
-  },
-  {
-    text: "Sports, Toys & Luggage",
-    to: "/all_categories",
-  },
-];
-
-const categories_popup_left = [
-  "Computer & Laptop",
-  "Computer Accessories",
-  "SmartPhone",
-  "Headphone",
-  "Mobile Accessories",
-  "Gaming Console",
-  "Camera & Photo",
-  "TV & Homes Appliances",
-  "Watchs & Accessories",
-  "GPS & Navigation",
-  "Warable Technology",
-];
-
-const categories_popup_right = [
-  "All ",
-  "Gaming Console",
-  "Camera & Photo",
-  "TV & Homes Appliances",
-  "Watchs & Accessories",
-  "GPS & Navigation",
-  "Warable Technology",
-];
+import Products from "./pages/products/Products";
+import Favorites from "./pages/favorites/Favorites";
+import Inbox from "./pages/inbox/Inbox";
+import ProductStock from "./pages/productStock/ProductStock";
+import Pricing from "./pages/pricing/Pricing";
+import Calendar from "./pages/calendar/Calendar";
+import TodoList from "./pages/todoList/TodoList";
+import Contact from "./pages/contact/Contact";
+import Invoice from "./pages/invoice/Invoice";
+import UiElements from "./pages/uiElements/UiElements";
+import Team from "./pages/team/Team";
+import Table from "./pages/table/Table";
+import Settings from "./pages/settings/Settings";
+import Revenue from "./pages/revenue/Revenue";
+import Login from "./pages/login/Login";
+import CreateAccount from "./pages/createAccount/CreateAccount";
 
 const App = () => {
   return (
-    <div className="container">
-      <div className="container2">
-        <Header
-          title="UNITED DEALS"
-          flashSale={headerFlashsale}
-          rightCont={header_right_cont}
-        />
-        <Categories
-          popup_right={categories_popup_right}
-          cont={categories_cont}
-          popup_left={categories_popup_left}
-        />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/all_categories" element={<AllCategories />} />
-          <Route path="/zara" element={<Zara />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
+    <div className="w-full flex items-start justify-between">
+      <Sidebar />
+      <div className="w-[80%]" style={{ width: "80%", gap: "30px" }}>
+        <Header />
+        <div className="px-[30px] items-center flex flex-col">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/inbox" element={<Inbox />} />
+            <Route path="/order_lists" element={<Home />} />
+            <Route path="/product_stock" element={<ProductStock />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/to_do" element={<TodoList />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/invoice" element={<Invoice />} />
+            <Route path="/ui_elements" element={<UiElements />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/table" element={<Table />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/revenue" element={<Revenue />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/create_account" element={<CreateAccount />} />
+          </Routes>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 };
