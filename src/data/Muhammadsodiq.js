@@ -117,4 +117,128 @@ export const statistics = [
   },
 ];
 
-export const dashDetails = [{}];
+export const dashDetails_top = {
+  title: "Deals Details",
+  btn: "October",
+};
+
+import dealsCartImg from "../assets/dashboard-deals-cart-img.png";
+
+export const dealsContTop = [
+  "Product Name",
+  "Location",
+  "Date - Time",
+  "Piece",
+  "Amount",
+  "Status",
+];
+
+export const dashDeals_cont = [
+  {
+    img: dealsCartImg,
+    title: "Apple Watch",
+    location: "6096 Marjolaine Landing",
+    date: "12.09.2026 - 12.53 PM",
+    piece: "423",
+    amount: "$34,295",
+    status: "Delivered",
+  },
+  {
+    img: dealsCartImg,
+    title: "Apple Watch",
+    location: "6096 Marjolaine Landing",
+    date: "12.09.2026 - 12.53 PM",
+    piece: "423",
+    amount: "$34,295",
+    status: "Delivered",
+  },
+  {
+    img: dealsCartImg,
+    title: "Apple Watch",
+    location: "6096 Marjolaine Landing",
+    date: "12.09.2026 - 12.53 PM",
+    piece: "423",
+    amount: "$34,295",
+    status: "Delivered",
+  },
+  {
+    img: dealsCartImg,
+    title: "Apple Watch",
+    location: "6096 Marjolaine Landing",
+    date: "12.09.2026 - 12.53 PM",
+    piece: "423",
+    amount: "$34,295",
+    status: "Delivered",
+  },
+];
+
+// Revenue
+import arrow1 from "../assets/revenue-cart2-arrow1.png";
+import arrow2 from "../assets/revenue-cart2-arrow2.png";
+
+export const revenue_top = {
+  title: "Revenue",
+  btn: "October",
+};
+
+export const arrows = [arrow1, arrow2];
+
+// product
+import cartimg from "../assets/product-cart-img.png";
+
+export const product_cont = [
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+  {
+    img: cartimg,
+    title: "Apple Watch Series 4 ",
+    price: "$120.00",
+    btn: "Edit Product",
+  },
+];
