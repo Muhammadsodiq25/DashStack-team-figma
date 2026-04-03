@@ -1,0 +1,167 @@
+.calender {
+  padding: 20px;
+  background: #f5f7fb;
+  font-family: "Inter", sans-serif;
+}
+
+.calender__top h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.calender__bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.calender__bottom--left {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.bottom__left--top button {
+  width: 100%;
+  padding: 12px;
+  background: #5b7cfa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.bottom__left--top button:hover {
+  background: #4a6cf0;
+}
+
+.bottom__left--top h3 {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.bottom__left--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.event__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.event__info h4 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.event__info p {
+  font-size: 12px;
+  color: #777;
+  margin: 2px 0;
+}
+
+.event__info span {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.event__people {
+  margin-left: auto;
+}
+
+.event__people span {
+  background: #eef2ff;
+  color: #5b7cfa;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.bottom__left--bottom button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #f0f2f5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottom__left--bottom button:hover {
+  background: #e4e6eb;
+}
+
+.calender__bottom--right {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.bottom__right--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom__right--top h4 {
+  font-size: 13px;
+  color: #999;
+}
+
+.bottom__right--top h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bottom--right--top__selects {
+  display: flex;
+  gap: 5px;
+}
+
+.bottom--right--top__selects button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #f1f3f7;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.bottom--right--top__selects button:hover {
+  background: #e0e3ea;
+}
+
+.bottom--right--top__selects .active {
+  background: #5b7cfa;
+  color: white;
+}
+
+.bottom__right--calendar {
+  margin-top: 20px;
+}
+
+.bottom__right--calendar img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
