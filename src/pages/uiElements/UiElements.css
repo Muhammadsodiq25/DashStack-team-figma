@@ -1,0 +1,65 @@
+.ui {
+  padding: 120px 0px;
+  margin-left: -50px;
+  width: 100%;
+}
+
+.ui__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ui__title {
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #202224;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ui__filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.ui__filter-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.ui__select {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.ui__card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ui__bars {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.ui__card-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.ui__pies {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}

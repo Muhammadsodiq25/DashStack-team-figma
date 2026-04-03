@@ -1,8 +1,11 @@
 import "./Calendar.css";
 import Abdulbosit from "../../data/Abdulbosit";
+import { useState } from "react";
 
 const Calendar = () => {
   const calendarData = Abdulbosit.find((item) => item.page === "calendar");
+
+  const [hovered, setHovered] = useState(false);
 
   return (
     <div className="calender">
@@ -20,7 +23,7 @@ const Calendar = () => {
           <div className="bottom__left--cards">
             {calendarData.events.map((item) => (
               <div className="event__card" key={item.id}>
-                <div className="dot" style={{ background: item.color }}></div>
+                <img className="event__card--img" src={item.img} alt="" />
 
                 <div className="event__info">
                   <h4>{item.title}</h4>
@@ -53,8 +56,36 @@ const Calendar = () => {
             </div>
           </div>
 
-          <div className="bottom__right--calendar">
+          <div
+            className="bottom__right--calendar"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
             <img src={calendarData.calendarImage} alt="calendar" />
+
+            {hovered && (
+              <div className="calendar__hoverCard">
+                <img
+                  src={calendarData.hoverCard.image}
+                  alt=""
+                  className="hover__img"
+                />
+
+                <div className="hover__content">
+                  <h4>{calendarData.hoverCard.title}</h4>
+                  <p>{calendarData.hoverCard.company}</p>
+                  <span>{calendarData.hoverCard.time}</span>
+                  <p>{calendarData.hoverCard.location}</p>
+
+                  <div className="hover__people">
+                    {calendarData.hoverCard.peopleImgs.map((img, i) => (
+                      <img key={i} src={img} alt="" />
+                    ))}
+                    <span>+{calendarData.hoverCard.peopleCount}</span>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
