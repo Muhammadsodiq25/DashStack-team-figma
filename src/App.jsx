@@ -17,6 +17,7 @@ import Table from "./pages/table/Table";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import CreateAccount from "./pages/createAccount/CreateAccount";
+import Orderlists from "./pages/orderLists/Orderlists";
 
 const App = () => {
   return (
@@ -30,7 +31,7 @@ const App = () => {
             <Route path="/products" element={<Products />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/inbox" element={<Inbox />} />
-            <Route path="/order_lists" element={<Home />} />
+            <Route path="/order_lists" element={<Orderlists />} />
             <Route path="/product_stock" element={<ProductStock />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/calendar" element={<Calendar />} />
