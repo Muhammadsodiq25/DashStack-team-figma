@@ -15,6 +15,7 @@ import UiElements from "./pages/uiElements/UiElements";
 import Team from "./pages/team/Team";
 import Table from "./pages/table/Table";
 import Settings from "./pages/settings/Settings";
+import Revenue from "./pages/revenue/Revenue";
 import Login from "./pages/login/Login";
 import CreateAccount from "./pages/createAccount/CreateAccount";
 
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/team" element={<Team />} />
             <Route path="/table" element={<Table />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/revenue" element={<Revenue />} />
             <Route path="/login" element={<Login />} />
             <Route path="/create_account" element={<CreateAccount />} />
           </Routes>

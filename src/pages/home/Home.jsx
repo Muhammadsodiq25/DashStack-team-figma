@@ -1,8 +1,9 @@
+import Dashboard from "../dashboard/Dashboard"
 
 const Home = () => {
   return (
-    <div>
-      
+    <div className="w-full">
+      <Dashboard/>
     </div>
   )
 }
