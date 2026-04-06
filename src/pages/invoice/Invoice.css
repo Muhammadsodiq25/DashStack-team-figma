@@ -1,0 +1,152 @@
+.invoice {
+  padding: 120px 0px;
+  margin-left: -50px;
+  width: 100%;
+}
+
+.invoice__title {
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #202224;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.invoice__card {
+  background: #ffffff;
+  height: 800px;
+  border: 0.3px #b9b9b9 solid;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.invoice__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 10px 130px 40px;
+}
+
+.invoice__name {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  color: #404040;
+}
+
+.invoice__text {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  color: #727272;
+}
+
+.invoice__label {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  color: #404040;
+  margin-bottom: 10px;
+}
+
+.invoice__dates {
+  text-align: right;
+}
+
+.invoice__date {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  color: #404040;
+  margin-bottom: 7px;
+}
+
+.invoice__table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.invoice__table-head,
+.invoice__table-row {
+  display: grid;
+  grid-template-columns: 1.4fr 3fr 1fr 1fr 1fr;
+  height: 67px;
+  padding: 0px 80px;
+  align-items: center;
+}
+
+.invoice__table-head {
+  background: #f1f4f9;
+  border-radius: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #202224;
+}
+
+.invoice__table-row {
+  border-bottom: 0.87px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.invoice__th:last-child,
+.invoice__td:last-child {
+  text-align: right;
+}
+
+.invoice__th:nth-child(3),
+.invoice__td:nth-child(3),
+.invoice__th:nth-child(4),
+.invoice__td:nth-child(4) {
+  text-align: center;
+}
+
+.invoice__bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoice__total {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.invoice__actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.invoice__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.invoice__btn--print {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #f1f3f7;
+}
+
+.invoice__btn--send {
+  gap: 10px;
+  padding: 0 18px;
+  height: 45px;
+  border-radius: 10px;
+  background: #4c6ef5;
+  color: #fff;
+  font-weight: 500;
+}
+
+.invoice__btn--send svg {
+  font-size: 14px;
+}

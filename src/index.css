@@ -1,1 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import "tailwindcss";
+
+.nunito {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100
+    "YTLC" 500;
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.link-hover {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.link-hover:hover {
+  color: #ffffff;
+  background-color: #4880ff;
+}
+
+.hover-link:hover {
+  border-left: 5px solid #4880ff;
+}
+
+body {
+  background-color: #f5f6fa;
+  height: 100%;
+}
